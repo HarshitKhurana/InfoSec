@@ -1,0 +1,15 @@
+# Find All NSE scripts
+locate *.nse
+
+nmap -sC 127.0.0.1        # Scan with default NSE scripts
+
+nmap --script=http* 127.0.0.1        #  Scan with all scripts starting with HTTP
+
+nmap –sU –A –PN –n –pU:19,53,123,161 –script=ntp-monlist,dns-recursion,snmp-sysdescr 192.168.0.0/24   # DDOS reflector : Not for CTF
+
+nmap --script dns-zonetransfer.nse --script-args dns-zonetransfer.domain=<domain> -p53 192.168.0.1  # DNS zone transfer
+
+nmap --script smb-brute.nse -p445 192.168.0.0/24  # samba bruteforce
+
+nmap -Pn --script=dns-brute domain.com    # DNS sub-domains brute-force
+
