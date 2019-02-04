@@ -33,7 +33,7 @@ Options,Example, Explanation
 ,,
 -sV,nmap -sV 10.1.1.1,determine version of service running on that port
 -sV --version-intensity 9,nmap -sV 10.1.1.1 --version-intensity,Version accuracy level([faster]0-9[slower])
--A,nmap -A 10.1.1.1,Hail Mary (scan everything, OS traceroute, version etc)
+-A,nmap -A 10.1.1.1,Hail Mary (scan everything OS traceroute version etc)
 ,,
 -O,nmap -O 10.1.1.1, Host OS detection using TCP/IP fingerprint
 -T ,nmap -T3 10.1.1.1,Timing for scanning ([slowest]0-5[fastest])
