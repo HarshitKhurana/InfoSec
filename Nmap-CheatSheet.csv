@@ -1,5 +1,5 @@
 Options,Example, Explanation
-,,
+-----,-------,-----------
 ,nmap 10.1.1.1, Scan this IP
 ,nmap 10.1.1.1 10.1.1.2, Scan this IP range
 ,nmap 10.1.1.1/24, Scan these IPs using CIDR
@@ -7,8 +7,7 @@ Options,Example, Explanation
 ,nmap 10.1.1.1-255,Scan these many IPs
 ,nmap whoareyou.com,Scan this host 
 -iL,nmap -iL searchFromThisList.txt,Scan domain/IPs in these hosts
-
-,,
+-----,-------,-----------
 -sS,nmap -sS 10.1.1.1, SYN Scan(default scan)
 -sT,nmap -sS 10.1.1.1, TCP Scan(establishes 3 way handshake)
 -sU,nmap -sU 10.1.1.1, UDP Scan
@@ -21,8 +20,7 @@ Options,Example, Explanation
 -PA,nmap -PA 10.1.1.1 -PA 22-25, TCP ACK scan from ports 22 to 25
 -PU,nmap -PU 10.1.1.1 -PU 53, UDP scan on port 53
 -PR,nmap -PR 10.1.1.1, ARP scan
-
-,,
+-----,-------,-----------
 -p,nmap -p 22 10.1.1.1,scan port 22
 -p,nmap -p 22-25 10.1.1.1,scan port 22 to 25
 -p,nmap -p U:53 10.1.1.1,scan udp port 53
@@ -30,17 +28,17 @@ Options,Example, Explanation
 -p100-,nmap -p100- 10.1.1.1,scan ports from 100 to 65536 
 -F,nmap -F 10.1.1.1,fast scan 100 ports
 --top-ports,nmap --top-ports 1000 10.1.1.1, scan top 1000 ports
-,,
+-----,-------,-----------
 -sV,nmap -sV 10.1.1.1,determine version of service running on that port
 -sV --version-intensity 9,nmap -sV 10.1.1.1 --version-intensity,Version accuracy level([faster]0-9[slower])
 -A,nmap -A 10.1.1.1,Hail Mary (scan everything OS traceroute version etc)
-,,
+-----,-------,-----------
 -O,nmap -O 10.1.1.1, Host OS detection using TCP/IP fingerprint
 -T ,nmap -T3 10.1.1.1,Timing for scanning ([slowest]0-5[fastest])
 --max-tries,nmap --max-tries 5, max number of port scan reqs
 --min-rate,nmap --min-rate 100 10.1.1.1,Send minimum number of packets per second 
 --max-rate,nmap --max-rate 100 10.1.1.1,Send max number of packets per second (at time firewalls block packets)
-,,
+-----,-------,-----------
 -sC,nmap -sC 10.1.1.1,Scan with some default NSE scripts
 --script,nmap --script=http* 10.1.1.1,scan host with all http scripts
 --script-args,nmap --script=http* 10.1.1.1,scan host with all http scripts
