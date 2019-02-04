@@ -9,5 +9,5 @@ ltrace : Library tracer
 
 checksec : (From pwntools) Checks and tells the flags for Stack Canary, PIE , NX , RELRO and architecture from executable .
 
-ld : 
+ldd : Print shared libraries being used by the binary
 
