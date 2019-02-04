@@ -45,9 +45,9 @@ Options,Example, Explanation
 --script,nmap --script=http* 10.1.1.1,scan host with all http scripts
 --script-args,nmap --script=http* 10.1.1.1,scan host with all http scripts
 -f,nmap 10.1.1.1 -f,fragment IP packets( sometimes useful in bypassing firewalls)
--D,nmap -D 10.1.1.250,10.1.1.251,10.1.1.252 10.1.1.1, Spoof source IP (spoofed ip is 10.1.1.250 10.1.1.251  10.1.1.252)
+-D,nmap -D 10.1.1.250 10.1.1.251 10.1.1.252 10.1.1.1, Spoof source IP (spoofed ip is 10.1.1.250 10.1.1.251  10.1.1.252)
 -g,nmap -g53 10.1.1.1,Use port number of scanning as 53
--oA,nmap -oA 10.1.1.1,writes output to grep,xml and normal file
+-oA,nmap -oA 10.1.1.1,writes output to grep xml and normal file
 --open,nmap --open 10.1.1.1,only list open(not 100% accurate) ports
 --iflist,nmap --iflist 10.1.1.1,show all packets transferred
 
