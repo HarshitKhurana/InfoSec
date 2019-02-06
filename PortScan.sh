@@ -34,7 +34,7 @@ do
   echo -en "[#] Port $i not open\n" >> .checking.log
 done
 rm .checking.log
-if [ AllClosed -eq 1]
+if [ AllClosed -eq 1 ]
 then
   echo -en "[#] All ports are closed\n"
   exit 0
