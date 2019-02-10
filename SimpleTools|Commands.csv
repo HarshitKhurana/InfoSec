@@ -1,6 +1,6 @@
-file     ;:; Gives info about type of file etc
-size     ;:; Gives info about the different sections of the executable	i.e Text Section , BSS Section , Data Section etc
-strings  ;:; List out all the string present in the executable file
-ltrace   ;:; Library tracer
-checksec ;:; (From pwntools) Checks and tells the flags for Stack Canary, PIE , NX , RELRO and architecture from executable .
-ldd      ;:; Print shared libraries being used by the binary
+file     ,:, Gives info about type of file etc
+size     ,:, Gives info about the different sections of the executable	i.e Text Section  BSS Section  Data Section etc
+strings  ,:, List out all the string present in the executable file
+ltrace   ,:, Library tracer
+checksec ,:, (From pwntools) Checks and tells the flags for Stack Canary PIE  NX  RELRO and architecture from executable .
+ldd      ,:, Print shared libraries being used by the binary
