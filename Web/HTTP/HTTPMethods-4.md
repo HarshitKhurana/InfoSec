@@ -125,21 +125,21 @@ Warning: way you want. Consider using -I/--head instead.
 * Rebuilt URL to: google.com/
 *   Trying 172.217.160.238...
 * Connected to google.com (172.217.160.238) port 80 (#0)
-> HEAD / HTTP/1.1
-> Host: google.com
-> User-Agent: curl/7.47.0
-> Accept: */*
+> HEAD / HTTP/1.1            # Making request to server      : Type of request
+> Host: google.com           # Making request to server      : Requesting host
+> User-Agent: curl/7.47.0    # Making request to server      : Requesting via program
+> Accept: */*                # Making request to server      : content-type that the client understands
 > 
-< HTTP/1.1 301 Moved Permanently
-< Location: http://www.google.com/
-< Content-Type: text/html; charset=UTF-8
-< Date: Mon, 11 Feb 2019 10:03:51 GMT
-< Expires: Wed, 13 Mar 2019 10:03:51 GMT
-< Cache-Control: public, max-age=2592000
-< Server: gws
-< Content-Length: 219
-< X-XSS-Protection: 1; mode=block
-< X-Frame-Options: SAMEORIGIN
+< HTTP/1.1 301 Moved Permanently          # Response from server  : Reponse code
+< Location: http://www.google.com/        # Response from server  : indicates the URL to redirect a page to (for 3XX)
+< Content-Type: text/html; charset=UTF-8  # Response from server  : content-type that server understands     
+< Date: Mon, 11 Feb 2019 10:03:51 GMT     # Response from server  : Server time  
+< Expires: Wed, 13 Mar 2019 10:03:51 GMT  # Response from server  : date/time after which the response is considered stale.
+< Cache-Control: public, max-age=2592000  # Response from server  : directives for caching mechanisms in both requests and responses       
+< Server: gws                             # Response from server  : software used by the origin server to handle the request.
+< Content-Length: 219                     # Response from server  : size of the entity body in the message, in bytes
+< X-XSS-Protection: 1; mode=block         # Response from server  : if a potential XSS detected, then browser will prevent rendering of the page       
+< X-Frame-Options: SAMEORIGIN             # Response from server  : the page can be in a frame as long as the site including it in the frame is the same as the one serving the page.
 < 
 ```
 
