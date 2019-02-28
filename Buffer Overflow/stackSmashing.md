@@ -43,7 +43,7 @@ End of assembler dump.
 ```
 
 </br> 
-&nbsp; -> The way the stack , the registers and our buffer is rendered in memory is : <img src="./stackReference.png">.
+&nbsp; -> The way the stack , the registers and our buffer is rendered in memory is : <img src="./stackLayout.png">.
 </br> 
 &nbsp; -> Now since we know that the stack grows from high memory to low memory and if we somehow are able to <b>over-write the return address with the address of our shellcode or any function we want</b>, then as soon as the function returns the control by popping the `RET` address from stack and jumpoing to it we wil achieve code execution.
 </br> 
