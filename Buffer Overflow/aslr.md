@@ -16,7 +16,7 @@
 #             2 – Full randomization. In addition to elements listed in the previous point, memory managed through brk() is also randomized.
 
 echo $value | sudo tee /proc/sys/kernel/randomize_va_space 
-# The above line will disable ASLR for the current session i.e untill the machine is rebooted.
+#  The above line will disable ASLR for the current session i.e untill the machine is rebooted.
 
 # To disable ASLR permanently i.e across reboots
 echo $value | sudo tee /etc/sysctl.d/01-disable-aslr.conf
