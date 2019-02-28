@@ -38,7 +38,7 @@ int main( int argc,  char *argv[]){
 }
 
 # Stack Canary disabled 
-root@PC-Name:~$ gcc stackCanary.c -o noCanary
+root@PC-Name:~$ gcc stackCanary.c -o noCanary -fno-stack-protector
 root@PC-Name:~$ gdb noCanary
 Dump of assembler code for function main:
    0x0804841d <+0>: push   ebp
