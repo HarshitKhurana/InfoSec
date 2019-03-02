@@ -11,7 +11,7 @@
 </br> 
 
 ```bash
-user@PC-Name:~# cat vulnerableCode.c
+user@PC-Name:~# cat canYouExecuteMeCode.c
 
 #include<stdio.h>
 #include<stdlib.h>
@@ -35,7 +35,6 @@ int main(){
 
 }
 
-user@PC-Name:~# gcc -ggdb vulnerableCode.c -o vulnerableCode -m32
 ```
 
 </br> 
@@ -53,6 +52,7 @@ user@PC-Name:~# cat canYouExecuteMeCode.c
 
 
 void dangerousFunction()  {
+  printf("GIVING SHELL\n");
   system("/bin/bash");
 }
 
