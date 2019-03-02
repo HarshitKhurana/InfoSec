@@ -51,13 +51,13 @@ user@PC-Name:~# cat canYouExecuteMeCode.c
 #include<stdio.h>
 #include<stdlib.h>
 
-char ans[10];
 
 void dangerousFunction()  {
   system("/bin/bash");
 }
 
 void getInput() {
+  char ans[12];
   gets(ans);
   puts("String is : ");
   puts(ans);
