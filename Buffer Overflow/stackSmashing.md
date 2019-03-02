@@ -36,22 +36,6 @@ int main(){
 }
 
 user@PC-Name:~# gcc -ggdb vulnerableCode.c -o vulnerableCode -m32
-user@PC-Name:~# gdb vulnerableCode
-> disass main
-Dump of assembler code for function main:
-   0x0804844d <+0>:   push   ebp
-   0x0804844e <+1>:   mov    ebp,esp
-   0x08048450 <+3>:   and    esp,0xfffffff0
-   0x08048453 <+6>:   sub    esp,0x20
-   0x08048456 <+9>:   lea    eax,[esp+0x16]
-   0x0804845a <+13>:  mov    DWORD PTR [esp],eax
-   0x0804845d <+16>:  call   0x8048310 <gets@plt>
-   0x08048462 <+21>:  lea    eax,[esp+0x16]
-   0x08048466 <+25>:  mov    DWORD PTR [esp],eax
-   0x08048469 <+28>:  call   0x8048320 <puts@plt>
-   0x0804846e <+33>:  leave  
-   0x0804846f <+34>:  ret    
-End of assembler dump.
 ```
 
 </br> 
