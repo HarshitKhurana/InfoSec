@@ -15,6 +15,9 @@ Ans : Beause basics are important and moreover though there are many protections
 <hr>
 <b>[*] Resources </b>
 </br>
+&nbsp; ->  <a href="http://www.securitytube.net/groups?operation=view&groupId=4"> Buffer Overflow : Security Tube</a> 
+</br>
+&nbsp; ->  <a href="https://www.youtube.com/playlist?list=PL118A3998B4401EC6"> Buffer Overflow : Security Tube(youtube)</a> 
 </br>
 &nbsp; ->  Do Stack buffer overflow good <a href="https://www.youtube.com/watch?v=renR0Aj2YzI">Presentation(youtube)</a> : <a href="https://github.com/justinsteven/dostackbufferoverflowgood"> Presentation material(github)</a>
 </br>
