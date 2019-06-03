@@ -35,7 +35,7 @@ int main(){
 <h4>[*] Our ShellCode</h4>
 <ul>
 <li type=0> What do we want to achieve shellcode </br></li> 
-&nbsp; &nbsp; 1.<a href="example1-shellcode.md" target="_blank"> Simply spawning a shell(No Sockets)</a></br></li> 
+&nbsp; &nbsp; 1.<a href="example1-shellcode.md" target="_blank"> Simply spawning a shell(not reverse)</a></br></li> 
 &nbsp; &nbsp; 2.<a href="example2-shellcode.md" target="_blank"> Reverse shell - shellcode</a></br></li> 
 </ul>
 
