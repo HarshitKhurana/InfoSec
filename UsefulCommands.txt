@@ -13,3 +13,10 @@ nmap --script smb-brute.nse -p445 192.168.0.0/24  # samba bruteforce
 
 nmap -Pn --script=dns-brute domain.com    # DNS sub-domains brute-force
 
+-> Upgrade to fully functional tty shell
+  -> python -c 'import pty; pty.spawn("/bin/bash")'
+  -> Cntrl + Z : to push it in backgroud
+  -> stty raw -echo
+  -> fg : to get back shell in foreground with tab completion etc.
+
+
